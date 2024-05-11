@@ -190,7 +190,7 @@ public class OpenGLRenderer implements Renderer {
 		
 		// Lee un archivo 3DS desde un recurso
 		obj3DS = new Resource3DSReader();
-		obj3DS.read3DSFromResource(context, R.raw.among_us);
+		obj3DS.read3DSFromResource(context, R.raw.body);
 	}
 	
 	@Override
@@ -214,7 +214,7 @@ public class OpenGLRenderer implements Renderer {
 			Log.w(TAG, "Max. Texture Image Units: "+maxTextureImageUnits[0]);
 		}
 		// Cargamos la textura desde los recursos
-		texture = TextureHelper.loadTexture(context, R.drawable.mono_tex);
+		texture = TextureHelper.loadTexture(context, R.drawable.body_texture);
 		
 		// Leemos los shaders
 		if (maxVertexTextureImageUnits[0]>0) {
